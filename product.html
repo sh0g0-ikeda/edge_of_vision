@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Edge of Visionの資産管理アプリ。株・暗号資産・貴金属など、多様な資産の価格変動を％単位で通知して管理できる革新的なツールです。" />
+    <title>プロダクト紹介 | Edge of Vision</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      function toggleNav() {
+        const navList = document.querySelector('header nav ul');
+        navList.classList.toggle('open');
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="assets/logo_horizontal.png" alt="Edge of Vision ロゴ" /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="business.html">事業紹介</a></li>
+          <li><a href="product.html">プロダクト</a></li>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="contact.html">問い合わせ</a></li>
+        </ul>
+      </nav>
+      <div class="nav-toggle" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="hero" style="height: 50vh;">
+      <h1>資産管理アプリ</h1>
+      <p>あなたの資産運用をサポートする、マルチアセット対応のアラート機能付きアプリ。</p>
+    </section>
+
+    <section>
+      <h2>アプリの特徴</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>マルチアセット対応</h3>
+          <p>株式、暗号資産、貴金属など、様々な資産カテゴリを一つのアプリで管理できます。</p>
+        </div>
+        <div class="card">
+          <h3>しきい値通知</h3>
+          <p>購入価格から5%、10%…と上下した際に通知。売買タイミングを逃しません。</p>
+        </div>
+        <div class="card">
+          <h3>一括管理</h3>
+          <p>異なる資産の動きを一覧で把握。ポートフォリオ全体のバランスがひと目で分かります。</p>
+        </div>
+      </div>
+
+      <!-- チャートイメージ：シンプルなSVGで資産の上下を表現 -->
+      <div class="chart">
+        <svg viewBox="0 0 100 60" preserveAspectRatio="none">
+          <polyline points="0,40 10,35 20,50 30,30 40,45 50,20 60,40 70,25 80,35 90,15 100,30" fill="none" stroke="var(--color-primary)" stroke-width="2" />
+        </svg>
+      </div>
+    </section>
+
+    <section class="dark">
+      <h2>使い方はシンプル</h2>
+      <div class="content">
+        <p>
+          アプリ内で資産の種類と購入時の価格を登録するだけ。後は自動的に市場価格を追跡し、設定した割合に達したときにプッシュ通知やメールでお知らせします。
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>今後の展望</h2>
+      <div class="content">
+        <p>
+          Edge of Visionの資産管理アプリは、将来的にAIによる最適売買タイミングの提案や、資産配分のリバランスアドバイスなど、より高度な機能の追加を計画しています。ユーザーの皆様からのフィードバックを反映し、常に進化し続けるサービスを目指します。
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Edge of Vision. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
